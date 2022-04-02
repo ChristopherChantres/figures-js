@@ -44,3 +44,20 @@ function circleArea(radio) {
   return PI * radio ** 2
 }
 console.groupEnd();
+
+
+function calculateSquarePerimeter(params) {
+  const input = document.getElementById('SquareInput');
+  const value = input.value;
+
+  const perimeter = squarePerimeter(value);
+  alert(perimeter);
+}
+
+function calculateSquareArea(params) {
+  const input = document.getElementById('SquareInput');
+  const value = input.value;
+
+  const area = squareArea(value);
+  alert(area);
+}
