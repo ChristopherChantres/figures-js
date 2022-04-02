@@ -1,34 +1,46 @@
 // Square Code
 
 console.group('Square');
-const squareSide = 6;
-console.log('The square side is: ' + squareSide);
 
-const squarePerimeter = squareSide * 4;
-console.log('The square perimeter is: ' + squarePerimeter);
+function squarePerimeter(squareSide) {
+  return squareSide * 4;
+}
 
-const squareArea = squareSide * squareSide;
-console.log('The square area is: ' + squareArea);
+function squareArea(squareSide) {
+  return squareSide * squareSide;
+}
 console.groupEnd();
 
 // Triangle Code
 
 console.group('Triangle')
-const triangleSide1 = 9;
-const triangleSide2 = 3;
-const triangleBase = 5;
-const triangleHeight = 5.5;
 
-console.log(
-  'The triangle sides are: '
-  + triangleSide1 + 'cm, '
-  + triangleSide2 + 'cm, '
-  + triangleBase + 'cm'
-);
+function trianglePerimeter(triangle1, triangle2, triangle3) {
+  return triangle1 + triangle2 + triangle3;
+}
 
-const trianglePerimeter = triangleSide1 + triangleSide2 + triangleBase;
-console.log('The triangle perimeter is: ' + trianglePerimeter + 'cm');
+function triangleArea(base, height) {
+  return (base * height) / 2;
+}
+console.groupEnd();
 
-const triangleArea = (triangleBase * triangleHeight) / 2;
-console.log('The triangle area is: ' + triangleArea);
+// Circle Code
+
+console.group('Circle')
+
+const PI = Math.PI;
+console.log('PI is: ' + PI)
+
+function circleDiameter(radio) {
+  return radio * 2
+}
+
+function circlePerimeter(radio) {
+  const diameter = circleDiameter(radio);
+  return diameter * PI;
+}
+
+function circleArea(radio) {
+  return PI * radio ** 2
+}
 console.groupEnd();
