@@ -26,6 +26,31 @@
       </form>
     </section>
 
+    <section>
+      <h2>Calculate triangle's area and perimeter</h2>
+      <form action="">
+        <label for="firstTriangleSide">Write the 1st side of your triangle:</label>
+        <input id="firstTriangleSide" type="number" required>
+        <label for="secondTriangleSide">Write the 2nd side of your triangle:</label>
+        <input id="secondTriangleSide" type="number" required>
+        <label for="thirdTriangleSide">Write the 3rd side of your triangle:</label>
+        <input id="thirdTriangleSide" type="number" required>
+        <button type="button" onclick="calculateTriangelPerimeter()">
+          Calculate Perimeter
+        </button>
+
+        <hr>
+
+        <label for="triangleHeight">Write the height of your triangle</label>
+        <input id="triangleHeight" type="number">
+        <label for="triangleBase">Write the base of your triangle</label>
+        <input id="triangleBase" type="number">
+        <button type="button" onclick="calculateTriangleArea()">
+          Calculate Area
+        </button>
+      </form>
+    </section>
+
     <script src="./figures.js"></script>
   </body>
 </html>

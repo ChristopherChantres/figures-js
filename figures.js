@@ -46,7 +46,9 @@ function circleArea(radio) {
 console.groupEnd();
 
 
-function calculateSquarePerimeter(params) {
+// -------------- Functions to connect with HTML
+
+function calculateSquarePerimeter() {
   const input = document.getElementById('SquareInput');
   const value = input.value;
 
@@ -54,10 +56,41 @@ function calculateSquarePerimeter(params) {
   alert(perimeter);
 }
 
-function calculateSquareArea(params) {
+function calculateSquareArea() {
   const input = document.getElementById('SquareInput');
   const value = input.value;
 
   const area = squareArea(value);
   alert(area);
 }
+
+// -------------------
+
+function calculateTriangelPerimeter() {
+  const input1 = document.getElementById('firstTriangleSide');
+  const value1 = parseInt(input1.value);
+
+  const input2 = document.getElementById('secondTriangleSide');
+  const value2 = parseInt(input2.value);
+
+  const input3 = document.getElementById('thirdTriangleSide');
+  const value3 = parseInt(input3.value);
+
+  const perimeter = trianglePerimeter(value1, value2, value3);
+  alert(perimeter)
+}
+
+function calculateTriangleArea() {
+  const valueHeight = document.getElementById('triangleHeight');
+  const height = parseFloat(valueHeight.value);
+  console.log(height);
+
+  const valueBase = document.getElementById('triangleBase');
+  const base = parseInt(valueBase.value);
+  console.log(base);
+
+  const area = triangleArea(base, height);
+  alert(area);
+}
+
+// -------------------
