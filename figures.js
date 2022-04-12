@@ -94,3 +94,28 @@ function calculateTriangleArea() {
 }
 
 // -------------------
+
+function calculateCircleDiameter() {
+  const valueRadius = document.getElementById('circleRadius');
+  const radius = parseInt(valueRadius.value);
+
+  const diameter = circleDiameter(radius);
+  alert(diameter);
+
+}
+
+function calculateCirclePerimeter() {
+  const valueRadius = document.getElementById('circleRadius');
+  const radius = parseInt(valueRadius.value);
+
+  const perimeter = circlePerimeter(radius);
+  alert(perimeter);
+}
+
+function calculateCircleArea() {
+  const valueRadius = document.getElementById('circleRadius');
+  const radius = parseInt(valueRadius.value);
+
+  const area = circleArea(radius)
+  alert(area);
+}

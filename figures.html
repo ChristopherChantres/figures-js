@@ -41,13 +41,24 @@
 
         <hr>
 
-        <label for="triangleHeight">Write the height of your triangle</label>
+        <label for="triangleHeight">Write the height of your triangle:</label>
         <input id="triangleHeight" type="number">
-        <label for="triangleBase">Write the base of your triangle</label>
+        <label for="triangleBase">Write the base of your triangle:</label>
         <input id="triangleBase" type="number">
         <button type="button" onclick="calculateTriangleArea()">
           Calculate Area
         </button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Calculate the circle's area, perimeter and diameter</h2>
+      <form action="">
+        <label for="circleRadius">Write the radius of the circle</label>
+        <input id="circleRadius" type="number">
+        <button type="button" onclick="calculateCircleDiameter()">Calculate diameter</button>
+        <button type="button" onclick="calculateCirclePerimeter()">Calculate perimeter</button>
+        <button type="button" onclick="calculateCircleArea()">Calculate area</button>
       </form>
     </section>
 
